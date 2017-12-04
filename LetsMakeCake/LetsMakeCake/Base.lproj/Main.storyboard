@@ -44,6 +44,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstItem="HEP-es-4tU" firstAttribute="trailing" secondItem="rlc-tK-pOG" secondAttribute="trailingMargin" id="N1F-9Q-p4h"/>
                                         <constraint firstItem="HEP-es-4tU" firstAttribute="top" secondItem="rlc-tK-pOG" secondAttribute="topMargin" id="itm-Pe-ISS"/>
@@ -62,7 +63,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="lwc-3T-cZi"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="modal" identifier="passDetail" id="yty-i5-I79"/>
+                        <segue destination="BYZ-38-t0r" kind="modal" identifier="passKue" id="yty-i5-I79"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Se9-7h-17C" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -77,7 +78,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q0z-ue-TV7">
+                            <navigationBar contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="Q0z-ue-TV7">
                                 <rect key="frame" x="0.0" y="14" width="375" height="44"/>
                                 <items>
                                     <navigationItem title="Detail" id="6pU-DU-jfC"/>
@@ -95,14 +96,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="bahan-Kue" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="25" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SkP-1P-FPa">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="cara_buat" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="25" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SkP-1P-FPa">
                                 <rect key="frame" x="16" y="416" width="343" height="205"/>
                                 <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="4eU-S0-qzY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="2Fv-bd-FJp"/>
                             <constraint firstItem="Q0z-ue-TV7" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="4P9-5g-gNw"/>
@@ -121,9 +122,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="labelCara" destination="SkP-1P-FPa" id="HUw-2h-OFE"/>
+                        <outlet property="labelBahan" destination="4eU-S0-qzY" id="rMb-KK-QqH"/>
+                        <outlet property="labelCara" destination="SkP-1P-FPa" id="cAv-XP-wbv"/>
                         <outlet property="labelNama" destination="R4j-Ww-DeH" id="n9B-cq-X4I"/>
-                        <outlet property="labelbahan" destination="4eU-S0-qzY" id="oG8-cq-RDJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
