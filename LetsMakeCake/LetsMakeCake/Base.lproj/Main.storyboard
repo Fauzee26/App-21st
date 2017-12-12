@@ -70,7 +70,13 @@
                             <outlet property="delegate" destination="50g-UQ-dzT" id="TVc-iz-wAR"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="List Of Cake" id="lwc-3T-cZi"/>
+                    <navigationItem key="navigationItem" title="List Of Cake" id="lwc-3T-cZi">
+                        <barButtonItem key="rightBarButtonItem" title="About" id="J66-Qd-3za">
+                            <connections>
+                                <segue destination="ci4-e6-4Wh" kind="modal" id="Emg-d0-RsX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="modal" identifier="passKue" id="yty-i5-I79"/>
                     </connections>
@@ -90,7 +96,13 @@
                             <navigationBar contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="Q0z-ue-TV7">
                                 <rect key="frame" x="0.0" y="14" width="375" height="44"/>
                                 <items>
-                                    <navigationItem title="Detail" id="6pU-DU-jfC"/>
+                                    <navigationItem title="Detail" id="6pU-DU-jfC">
+                                        <barButtonItem key="rightBarButtonItem" title="About" id="vnD-q0-yFS">
+                                            <connections>
+                                                <segue destination="ci4-e6-4Wh" kind="modal" id="ls5-Rs-x9Q"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nama_Kue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R4j-Ww-DeH">
@@ -215,4 +227,7 @@
     <resources>
         <image name="cookies-logo-design-2" width="546" height="444"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="ls5-Rs-x9Q"/>
+    </inferredMetricsTieBreakers>
 </document>
